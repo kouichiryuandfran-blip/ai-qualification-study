@@ -94,7 +94,6 @@ function getMenuTitle(menu) {
 
 function getMenuPath(menu) {
   return (
-    menu.output_file ||
     menu.relative_path ||
     menu.path ||
     menu.file ||
@@ -470,6 +469,11 @@ function getSpeechRate() {
 // ------------------------------------------------------
 // 画面遷移
 // ------------------------------------------------------
+function backToMainMenu() {
+  stopReading();
+  window.location.href = "./index.html";
+}
+
 function backToMenu() {
   stopReading();
   showArea("menuArea");
