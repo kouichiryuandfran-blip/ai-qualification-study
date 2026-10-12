@@ -1,0 +1,87 @@
+{
+  "menu_name": "AI11_プロンプトエンジニアリング",
+  "display_name": "プロンプトエンジニアリング",
+  "major_category_id": "AI11",
+  "quiz_count": 13,
+  "question_count": 67,
+  "quizzes": [
+    {
+      "title": "プロンプトとは",
+      "file_stem": "AI11-01_プロンプトとは",
+      "question_count": 11,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-01_プロンプトとは.json"
+    },
+    {
+      "title": "Instruction",
+      "file_stem": "AI11-02_Instruction",
+      "question_count": 5,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-02_Instruction.json"
+    },
+    {
+      "title": "Input Data",
+      "file_stem": "AI11-03_Input Data",
+      "question_count": 3,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-03_Input Data.json"
+    },
+    {
+      "title": "Output Indicator",
+      "file_stem": "AI11-04_Output Indicator",
+      "question_count": 4,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-04_Output Indicator.json"
+    },
+    {
+      "title": "Zero-Shot",
+      "file_stem": "AI11-05_Zero-Shot",
+      "question_count": 4,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-05_Zero-Shot.json"
+    },
+    {
+      "title": "Few-Shot",
+      "file_stem": "AI11-06_Few-Shot",
+      "question_count": 7,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-06_Few-Shot.json"
+    },
+    {
+      "title": "プロンプト改善",
+      "file_stem": "AI11-07_プロンプト改善",
+      "question_count": 10,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-07_プロンプト改善.json"
+    },
+    {
+      "title": "要約",
+      "file_stem": "AI11-08_要約",
+      "question_count": 4,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-08_要約.json"
+    },
+    {
+      "title": "翻訳",
+      "file_stem": "AI11-09_翻訳",
+      "question_count": 4,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-09_翻訳.json"
+    },
+    {
+      "title": "校正・文章生成",
+      "file_stem": "AI11-10_校正・文章生成",
+      "question_count": 3,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-10_校正・文章生成.json"
+    },
+    {
+      "title": "アイデア生成",
+      "file_stem": "AI11-11_アイデア生成",
+      "question_count": 3,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-11_アイデア生成.json"
+    },
+    {
+      "title": "情報抽出・分類",
+      "file_stem": "AI11-12_情報抽出・分類",
+      "question_count": 4,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-12_情報抽出・分類.json"
+    },
+    {
+      "title": "コード生成",
+      "file_stem": "AI11-13_コード生成",
+      "question_count": 5,
+      "relative_path": "AI11_プロンプトエンジニアリング/AI11-13_コード生成.json"
+    }
+  ]
+}

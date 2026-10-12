@@ -1,0 +1,57 @@
+{
+  "menu_name": "AI04_ニューラルネットワーク・深層学習",
+  "display_name": "ニューラルネットワーク・深層学習",
+  "major_category_id": "AI04",
+  "quiz_count": 8,
+  "question_count": 43,
+  "quizzes": [
+    {
+      "title": "ニューラルネットワーク",
+      "file_stem": "AI04-01_ニューラルネットワーク",
+      "question_count": 6,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-01_ニューラルネットワーク.json"
+    },
+    {
+      "title": "ネットワーク構造",
+      "file_stem": "AI04-02_ネットワーク構造",
+      "question_count": 4,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-02_ネットワーク構造.json"
+    },
+    {
+      "title": "ディープラーニング",
+      "file_stem": "AI04-03_ディープラーニング",
+      "question_count": 7,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-03_ディープラーニング.json"
+    },
+    {
+      "title": "活性化関数",
+      "file_stem": "AI04-04_活性化関数",
+      "question_count": 6,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-04_活性化関数.json"
+    },
+    {
+      "title": "誤差関数",
+      "file_stem": "AI04-05_誤差関数",
+      "question_count": 4,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-05_誤差関数.json"
+    },
+    {
+      "title": "誤差逆伝播法",
+      "file_stem": "AI04-06_誤差逆伝播法",
+      "question_count": 7,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-06_誤差逆伝播法.json"
+    },
+    {
+      "title": "最適化",
+      "file_stem": "AI04-07_最適化",
+      "question_count": 5,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-07_最適化.json"
+    },
+    {
+      "title": "正則化",
+      "file_stem": "AI04-08_正則化",
+      "question_count": 4,
+      "relative_path": "AI04_ニューラルネットワーク・深層学習/AI04-08_正則化.json"
+    }
+  ]
+}

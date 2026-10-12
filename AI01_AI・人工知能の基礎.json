@@ -1,0 +1,45 @@
+{
+  "menu_name": "AI01_AI・人工知能の基礎",
+  "display_name": "AI・人工知能の基礎",
+  "major_category_id": "AI01",
+  "quiz_count": 6,
+  "question_count": 200,
+  "quizzes": [
+    {
+      "title": "AIとは",
+      "file_stem": "AI01-01_AIとは",
+      "question_count": 97,
+      "relative_path": "AI01_AI・人工知能の基礎/AI01-01_AIとは.json"
+    },
+    {
+      "title": "AIの分類",
+      "file_stem": "AI01-02_AIの分類",
+      "question_count": 28,
+      "relative_path": "AI01_AI・人工知能の基礎/AI01-02_AIの分類.json"
+    },
+    {
+      "title": "AIと人間",
+      "file_stem": "AI01-03_AIと人間",
+      "question_count": 7,
+      "relative_path": "AI01_AI・人工知能の基礎/AI01-03_AIと人間.json"
+    },
+    {
+      "title": "AIの基本方式",
+      "file_stem": "AI01-04_AIの基本方式",
+      "question_count": 14,
+      "relative_path": "AI01_AI・人工知能の基礎/AI01-04_AIの基本方式.json"
+    },
+    {
+      "title": "AIの基本問題",
+      "file_stem": "AI01-05_AIの基本問題",
+      "question_count": 37,
+      "relative_path": "AI01_AI・人工知能の基礎/AI01-05_AIの基本問題.json"
+    },
+    {
+      "title": "AIとロボット",
+      "file_stem": "AI01-06_AIとロボット",
+      "question_count": 17,
+      "relative_path": "AI01_AI・人工知能の基礎/AI01-06_AIとロボット.json"
+    }
+  ]
+}

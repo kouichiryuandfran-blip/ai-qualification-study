@@ -1,0 +1,69 @@
+{
+  "menu_name": "AI10_RAG・AIエージェント",
+  "display_name": "RAG・AIエージェント",
+  "major_category_id": "AI10",
+  "quiz_count": 10,
+  "question_count": 42,
+  "quizzes": [
+    {
+      "title": "RAGの基本",
+      "file_stem": "AI10-01_RAGの基本",
+      "question_count": 5,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-01_RAGの基本.json"
+    },
+    {
+      "title": "文書分割",
+      "file_stem": "AI10-02_文書分割",
+      "question_count": 4,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-02_文書分割.json"
+    },
+    {
+      "title": "Embedding",
+      "file_stem": "AI10-03_Embedding",
+      "question_count": 5,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-03_Embedding.json"
+    },
+    {
+      "title": "Vector DB",
+      "file_stem": "AI10-04_Vector DB",
+      "question_count": 4,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-04_Vector DB.json"
+    },
+    {
+      "title": "Retrieval",
+      "file_stem": "AI10-05_Retrieval",
+      "question_count": 3,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-05_Retrieval.json"
+    },
+    {
+      "title": "RAGの長所・限界",
+      "file_stem": "AI10-06_RAGの長所・限界",
+      "question_count": 3,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-06_RAGの長所・限界.json"
+    },
+    {
+      "title": "AIエージェント",
+      "file_stem": "AI10-07_AIエージェント",
+      "question_count": 6,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-07_AIエージェント.json"
+    },
+    {
+      "title": "Tool Use",
+      "file_stem": "AI10-08_Tool Use",
+      "question_count": 5,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-08_Tool Use.json"
+    },
+    {
+      "title": "MCP",
+      "file_stem": "AI10-09_MCP",
+      "question_count": 4,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-09_MCP.json"
+    },
+    {
+      "title": "エージェント活用",
+      "file_stem": "AI10-10_エージェント活用",
+      "question_count": 3,
+      "relative_path": "AI10_RAG・AIエージェント/AI10-10_エージェント活用.json"
+    }
+  ]
+}

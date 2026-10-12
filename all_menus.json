@@ -1,0 +1,111 @@
+{
+  "menu_count": 15,
+  "question_count": 1287,
+  "menus": [
+    {
+      "menu_name": "AI01_AI・人工知能の基礎",
+      "display_name": "AI・人工知能の基礎",
+      "quiz_count": 6,
+      "question_count": 200,
+      "output_file": "AI01_AI・人工知能の基礎.json"
+    },
+    {
+      "menu_name": "AI02_AIの歴史・人物・AIブーム",
+      "display_name": "AIの歴史・人物・AIブーム",
+      "quiz_count": 8,
+      "question_count": 95,
+      "output_file": "AI02_AIの歴史・人物・AIブーム.json"
+    },
+    {
+      "menu_name": "AI03_機械学習",
+      "display_name": "機械学習",
+      "quiz_count": 8,
+      "question_count": 101,
+      "output_file": "AI03_機械学習.json"
+    },
+    {
+      "menu_name": "AI04_ニューラルネットワーク・深層学習",
+      "display_name": "ニューラルネットワーク・深層学習",
+      "quiz_count": 8,
+      "question_count": 43,
+      "output_file": "AI04_ニューラルネットワーク・深層学習.json"
+    },
+    {
+      "menu_name": "AI05_ディープラーニング要素技術",
+      "display_name": "ディープラーニング要素技術",
+      "quiz_count": 9,
+      "question_count": 33,
+      "output_file": "AI05_ディープラーニング要素技術.json"
+    },
+    {
+      "menu_name": "AI06_画像・音声・自然言語処理",
+      "display_name": "画像・音声・自然言語処理",
+      "quiz_count": 9,
+      "question_count": 41,
+      "output_file": "AI06_画像・音声・自然言語処理.json"
+    },
+    {
+      "menu_name": "AI07_生成モデル・生成AI",
+      "display_name": "生成モデル・生成AI",
+      "quiz_count": 8,
+      "question_count": 73,
+      "output_file": "AI07_生成モデル・生成AI.json"
+    },
+    {
+      "menu_name": "AI08_Transformer・LLM",
+      "display_name": "Transformer・LLM",
+      "quiz_count": 13,
+      "question_count": 119,
+      "output_file": "AI08_Transformer・LLM.json"
+    },
+    {
+      "menu_name": "AI09_生成AIサービス・モデル",
+      "display_name": "生成AIサービス・モデル",
+      "quiz_count": 10,
+      "question_count": 83,
+      "output_file": "AI09_生成AIサービス・モデル.json"
+    },
+    {
+      "menu_name": "AI10_RAG・AIエージェント",
+      "display_name": "RAG・AIエージェント",
+      "quiz_count": 10,
+      "question_count": 42,
+      "output_file": "AI10_RAG・AIエージェント.json"
+    },
+    {
+      "menu_name": "AI11_プロンプトエンジニアリング",
+      "display_name": "プロンプトエンジニアリング",
+      "quiz_count": 13,
+      "question_count": 67,
+      "output_file": "AI11_プロンプトエンジニアリング.json"
+    },
+    {
+      "menu_name": "AI12_AI社会実装・業務活用",
+      "display_name": "AI社会実装・業務活用",
+      "quiz_count": 12,
+      "question_count": 197,
+      "output_file": "AI12_AI社会実装・業務活用.json"
+    },
+    {
+      "menu_name": "AI13_数理・統計・モデル評価",
+      "display_name": "数理・統計・モデル評価",
+      "quiz_count": 13,
+      "question_count": 59,
+      "output_file": "AI13_数理・統計・モデル評価.json"
+    },
+    {
+      "menu_name": "AI14_AI関連法務・知的財産",
+      "display_name": "AI関連法務・知的財産",
+      "quiz_count": 14,
+      "question_count": 64,
+      "output_file": "AI14_AI関連法務・知的財産.json"
+    },
+    {
+      "menu_name": "AI15_AI倫理・リスク・ガバナンス",
+      "display_name": "AI倫理・リスク・ガバナンス",
+      "quiz_count": 16,
+      "question_count": 70,
+      "output_file": "AI15_AI倫理・リスク・ガバナンス.json"
+    }
+  ]
+}

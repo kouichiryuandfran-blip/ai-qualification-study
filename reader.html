@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>生成AI資格学習 音声学習</title>
+
+  <link rel="stylesheet" href="reader.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="app-header">
+      <h1>生成AI資格学習 音声学習</h1>
+      <p class="subtext">問題・解答・解説を音声で学習できます</p>
+    </header>
+
+    <!-- メニュー選択エリア -->
+    <section id="menuArea" class="card">
+      <h2>学習メニュー</h2>
+      <p class="subtext">学習する分類を選択してください</p>
+
+      <div id="menuList">
+        読み込み中...
+      </div>
+    </section>
+
+    <!-- テーマ選択エリア -->
+    <section id="quizArea" class="card hidden">
+      <button class="small-btn" onclick="backToMenu()">← メニューへ戻る</button>
+
+      <h2 id="selectedMenuTitle">テーマ選択</h2>
+      <p class="subtext">読み上げるテーマを選択してください</p>
+
+      <div id="quizList"></div>
+    </section>
+
+    <!-- 音声学習エリア -->
+    <section id="readerArea" class="card hidden">
+      <button class="small-btn" onclick="backToQuizList()">← テーマへ戻る</button>
+
+      <h2 id="readerTitle">音声学習</h2>
+
+      <div class="status-box">
+        <div id="counter">0 / 0</div>
+        <div id="playStatus">停止中</div>
+      </div>
+
+      <div class="setting-box">
+        <label for="speedRange">読み上げ速度</label>
+        <input type="range" id="speedRange" min="0.6" max="1.5" step="0.1" value="1.0">
+        <span id="speedValue">1.0</span>
+      </div>
+
+      <div class="setting-box">
+        <label for="readMode">読み上げ範囲</label>
+        <select id="readMode">
+          <option value="question">問題のみ</option>
+          <option value="answer">問題＋解答</option>
+          <option value="explanation1">問題＋解答＋解説1</option>
+          <option value="all" selected>問題＋解答＋解説1＋解説2</option>
+        </select>
+      </div>
+
+      <div class="button-row">
+        <button onclick="startReading()">▶ 読み上げ開始</button>
+        <button onclick="pauseReading()">一時停止</button>
+        <button onclick="resumeReading()">再開</button>
+        <button onclick="stopReading()">停止</button>
+      </div>
+
+      <div class="button-row">
+        <button onclick="readCurrentQuestion()">現在の問題を読む</button>
+        <button onclick="nextQuestion()">次の問題へ</button>
+      </div>
+
+      <div class="question-card">
+        <p id="questionId" class="meta"></p>
+        <p id="questionFormat" class="meta"></p>
+
+        <h3>問題</h3>
+        <div id="questionText"></div>
+
+        <h3>解答</h3>
+        <div id="answerText"></div>
+
+        <h3>解説1</h3>
+        <div id="explanation1Text"></div>
+
+        <h3>解説2</h3>
+        <div id="explanation2Text"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="speech_dictionary.js"></script>
+  <script src="reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+{
+  "menu_name": "AI13_数理・統計・モデル評価",
+  "display_name": "数理・統計・モデル評価",
+  "major_category_id": "AI13",
+  "quiz_count": 13,
+  "question_count": 59,
+  "quizzes": [
+    {
+      "title": "基本統計量",
+      "file_stem": "AI13-01_基本統計量",
+      "question_count": 9,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-01_基本統計量.json"
+    },
+    {
+      "title": "平均・中央値・分散",
+      "file_stem": "AI13-02_平均・中央値・分散",
+      "question_count": 2,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-02_平均・中央値・分散.json"
+    },
+    {
+      "title": "確率",
+      "file_stem": "AI13-03_確率",
+      "question_count": 7,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-03_確率.json"
+    },
+    {
+      "title": "確率分布",
+      "file_stem": "AI13-04_確率分布",
+      "question_count": 5,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-04_確率分布.json"
+    },
+    {
+      "title": "ベクトル・行列",
+      "file_stem": "AI13-05_ベクトル・行列",
+      "question_count": 6,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-05_ベクトル・行列.json"
+    },
+    {
+      "title": "微分・勾配",
+      "file_stem": "AI13-06_微分・勾配",
+      "question_count": 6,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-06_微分・勾配.json"
+    },
+    {
+      "title": "損失関数",
+      "file_stem": "AI13-07_損失関数",
+      "question_count": 4,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-07_損失関数.json"
+    },
+    {
+      "title": "混同行列",
+      "file_stem": "AI13-08_混同行列",
+      "question_count": 4,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-08_混同行列.json"
+    },
+    {
+      "title": "Accuracy",
+      "file_stem": "AI13-09_Accuracy",
+      "question_count": 4,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-09_Accuracy.json"
+    },
+    {
+      "title": "Precision",
+      "file_stem": "AI13-10_Precision",
+      "question_count": 2,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-10_Precision.json"
+    },
+    {
+      "title": "Recall",
+      "file_stem": "AI13-11_Recall",
+      "question_count": 3,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-11_Recall.json"
+    },
+    {
+      "title": "F値",
+      "file_stem": "AI13-12_F値",
+      "question_count": 2,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-12_F値.json"
+    },
+    {
+      "title": "ROC・AUC",
+      "file_stem": "AI13-13_ROC・AUC",
+      "question_count": 5,
+      "relative_path": "AI13_数理・統計・モデル評価/AI13-13_ROC・AUC.json"
+    }
+  ]
+}

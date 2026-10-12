@@ -1,0 +1,63 @@
+{
+  "menu_name": "AI06_画像・音声・自然言語処理",
+  "display_name": "画像・音声・自然言語処理",
+  "major_category_id": "AI06",
+  "quiz_count": 9,
+  "question_count": 41,
+  "quizzes": [
+    {
+      "title": "画像認識",
+      "file_stem": "AI06-01_画像認識",
+      "question_count": 5,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-01_画像認識.json"
+    },
+    {
+      "title": "物体認識関連",
+      "file_stem": "AI06-02_物体認識関連",
+      "question_count": 3,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-02_物体認識関連.json"
+    },
+    {
+      "title": "自然言語処理",
+      "file_stem": "AI06-03_自然言語処理",
+      "question_count": 6,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-03_自然言語処理.json"
+    },
+    {
+      "title": "音声処理",
+      "file_stem": "AI06-04_音声処理",
+      "question_count": 3,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-04_音声処理.json"
+    },
+    {
+      "title": "転移学習",
+      "file_stem": "AI06-05_転移学習",
+      "question_count": 7,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-05_転移学習.json"
+    },
+    {
+      "title": "ファインチューニング",
+      "file_stem": "AI06-06_ファインチューニング",
+      "question_count": 5,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-06_ファインチューニング.json"
+    },
+    {
+      "title": "マルチモーダル",
+      "file_stem": "AI06-07_マルチモーダル",
+      "question_count": 6,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-07_マルチモーダル.json"
+    },
+    {
+      "title": "説明可能性",
+      "file_stem": "AI06-08_説明可能性",
+      "question_count": 4,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-08_説明可能性.json"
+    },
+    {
+      "title": "モデル軽量化",
+      "file_stem": "AI06-09_モデル軽量化",
+      "question_count": 2,
+      "relative_path": "AI06_画像・音声・自然言語処理/AI06-09_モデル軽量化.json"
+    }
+  ]
+}

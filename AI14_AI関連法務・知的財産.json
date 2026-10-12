@@ -1,0 +1,93 @@
+{
+  "menu_name": "AI14_AI関連法務・知的財産",
+  "display_name": "AI関連法務・知的財産",
+  "major_category_id": "AI14",
+  "quiz_count": 14,
+  "question_count": 64,
+  "quizzes": [
+    {
+      "title": "個人情報保護法",
+      "file_stem": "AI14-01_個人情報保護法",
+      "question_count": 9,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-01_個人情報保護法.json"
+    },
+    {
+      "title": "個人情報・要配慮個人情報",
+      "file_stem": "AI14-02_個人情報・要配慮個人情報",
+      "question_count": 9,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-02_個人情報・要配慮個人情報.json"
+    },
+    {
+      "title": "プライバシー",
+      "file_stem": "AI14-03_プライバシー",
+      "question_count": 4,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-03_プライバシー.json"
+    },
+    {
+      "title": "著作権法",
+      "file_stem": "AI14-04_著作権法",
+      "question_count": 7,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-04_著作権法.json"
+    },
+    {
+      "title": "AI学習と著作権",
+      "file_stem": "AI14-05_AI学習と著作権",
+      "question_count": 6,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-05_AI学習と著作権.json"
+    },
+    {
+      "title": "AI生成物と著作権",
+      "file_stem": "AI14-06_AI生成物と著作権",
+      "question_count": 4,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-06_AI生成物と著作権.json"
+    },
+    {
+      "title": "特許法",
+      "file_stem": "AI14-07_特許法",
+      "question_count": 3,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-07_特許法.json"
+    },
+    {
+      "title": "商標・意匠",
+      "file_stem": "AI14-08_商標・意匠",
+      "question_count": 2,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-08_商標・意匠.json"
+    },
+    {
+      "title": "不正競争防止法",
+      "file_stem": "AI14-09_不正競争防止法",
+      "question_count": 2,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-09_不正競争防止法.json"
+    },
+    {
+      "title": "営業秘密",
+      "file_stem": "AI14-10_営業秘密",
+      "question_count": 5,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-10_営業秘密.json"
+    },
+    {
+      "title": "肖像権・パブリシティ権",
+      "file_stem": "AI14-11_肖像権・パブリシティ権",
+      "question_count": 3,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-11_肖像権・パブリシティ権.json"
+    },
+    {
+      "title": "独占禁止法",
+      "file_stem": "AI14-12_独占禁止法",
+      "question_count": 2,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-12_独占禁止法.json"
+    },
+    {
+      "title": "AI開発委託契約",
+      "file_stem": "AI14-13_AI開発委託契約",
+      "question_count": 3,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-13_AI開発委託契約.json"
+    },
+    {
+      "title": "AIサービス提供契約",
+      "file_stem": "AI14-14_AIサービス提供契約",
+      "question_count": 5,
+      "relative_path": "AI14_AI関連法務・知的財産/AI14-14_AIサービス提供契約.json"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "menu_name": "AI03_機械学習",
+  "display_name": "機械学習",
+  "major_category_id": "AI03",
+  "quiz_count": 8,
+  "question_count": 101,
+  "quizzes": [
+    {
+      "title": "機械学習の基本",
+      "file_stem": "AI03-01_機械学習の基本",
+      "question_count": 14,
+      "relative_path": "AI03_機械学習/AI03-01_機械学習の基本.json"
+    },
+    {
+      "title": "教師あり学習",
+      "file_stem": "AI03-02_教師あり学習",
+      "question_count": 18,
+      "relative_path": "AI03_機械学習/AI03-02_教師あり学習.json"
+    },
+    {
+      "title": "教師なし学習",
+      "file_stem": "AI03-03_教師なし学習",
+      "question_count": 14,
+      "relative_path": "AI03_機械学習/AI03-03_教師なし学習.json"
+    },
+    {
+      "title": "強化学習",
+      "file_stem": "AI03-04_強化学習",
+      "question_count": 14,
+      "relative_path": "AI03_機械学習/AI03-04_強化学習.json"
+    },
+    {
+      "title": "データ",
+      "file_stem": "AI03-05_データ",
+      "question_count": 8,
+      "relative_path": "AI03_機械学習/AI03-05_データ.json"
+    },
+    {
+      "title": "過学習・汎化",
+      "file_stem": "AI03-06_過学習・汎化",
+      "question_count": 16,
+      "relative_path": "AI03_機械学習/AI03-06_過学習・汎化.json"
+    },
+    {
+      "title": "モデル選択",
+      "file_stem": "AI03-07_モデル選択",
+      "question_count": 7,
+      "relative_path": "AI03_機械学習/AI03-07_モデル選択.json"
+    },
+    {
+      "title": "モデル評価",
+      "file_stem": "AI03-08_モデル評価",
+      "question_count": 10,
+      "relative_path": "AI03_機械学習/AI03-08_モデル評価.json"
+    }
+  ]
+}

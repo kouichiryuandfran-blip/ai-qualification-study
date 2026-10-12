@@ -1,0 +1,57 @@
+{
+  "menu_name": "AI02_AIの歴史・人物・AIブーム",
+  "display_name": "AIの歴史・人物・AIブーム",
+  "major_category_id": "AI02",
+  "quiz_count": 8,
+  "question_count": 95,
+  "quizzes": [
+    {
+      "title": "AIの誕生",
+      "file_stem": "AI02-01_AIの誕生",
+      "question_count": 15,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-01_AIの誕生.json"
+    },
+    {
+      "title": "第一次AIブーム",
+      "file_stem": "AI02-02_第一次AIブーム",
+      "question_count": 9,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-02_第一次AIブーム.json"
+    },
+    {
+      "title": "第一次AIの冬",
+      "file_stem": "AI02-03_第一次AIの冬",
+      "question_count": 9,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-03_第一次AIの冬.json"
+    },
+    {
+      "title": "第二次AIブーム",
+      "file_stem": "AI02-04_第二次AIブーム",
+      "question_count": 9,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-04_第二次AIブーム.json"
+    },
+    {
+      "title": "第二次AIの冬",
+      "file_stem": "AI02-05_第二次AIの冬",
+      "question_count": 9,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-05_第二次AIの冬.json"
+    },
+    {
+      "title": "第三次AIブーム",
+      "file_stem": "AI02-06_第三次AIブーム",
+      "question_count": 15,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-06_第三次AIブーム.json"
+    },
+    {
+      "title": "AI関連人物",
+      "file_stem": "AI02-07_AI関連人物",
+      "question_count": 15,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-07_AI関連人物.json"
+    },
+    {
+      "title": "AIの未来",
+      "file_stem": "AI02-08_AIの未来",
+      "question_count": 14,
+      "relative_path": "AI02_AIの歴史・人物・AIブーム/AI02-08_AIの未来.json"
+    }
+  ]
+}

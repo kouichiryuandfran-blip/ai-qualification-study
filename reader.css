@@ -1,0 +1,254 @@
+/* ======================================================
+   生成AI資格学習 音声学習アプリ reader.css
+   生成AI資格学習本体デザイン統一版
+   ====================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  font-family: "Yu Gothic", "YuGothic", "Meiryo", sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  line-height: 1.7;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 18px;
+  padding: 12px 8px;
+}
+
+.app-header h1 {
+  margin: 8px 0;
+  font-size: 28px;
+  color: #222;
+  font-weight: 700;
+}
+
+.subtext {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0 18px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  margin: 12px 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #7CB342;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ボタン共通 */
+button,
+.card-btn,
+.small-btn {
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: 0.15s ease;
+}
+
+button:active,
+.card-btn:active,
+.small-btn:active {
+  transform: scale(0.98);
+}
+
+/* メニュー・テーマボタン */
+.card-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 16px;
+  background: #7CB342;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-btn:hover {
+  background: #689F38;
+}
+
+/* 戻るボタン */
+.small-btn {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  background: #F1F8E9;
+  color: #7CB342;
+  border: none;
+  font-size: 15px;
+}
+
+.small-btn:hover {
+  background: #DCEDC8;
+}
+
+/* 状態表示 */
+.status-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 14px 0;
+  padding: 12px;
+  background: #F1F8E9;
+  border-radius: 12px;
+  color: #7CB342;
+  font-weight: 700;
+}
+
+/* 設定エリア */
+.setting-box {
+  margin: 14px 0;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #C5E1A5;
+  border-radius: 14px;
+}
+
+.setting-box label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.setting-box input[type="range"] {
+  width: 78%;
+  vertical-align: middle;
+  accent-color: #7CB342;
+}
+
+.setting-box select {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #C5E1A5;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* 操作ボタン */
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.button-row button {
+  padding: 15px 10px;
+  background: #7CB342;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button-row button:hover {
+  background: #689F38;
+}
+
+/* 問題表示カード */
+.question-card {
+  margin-top: 18px;
+  padding: 18px;
+  background: #fff;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.question-card h3 {
+  margin: 20px 0 8px;
+  padding-left: 9px;
+  border-left: 5px solid #7CB342;
+  color: #7CB342;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.question-card div {
+  padding: 12px;
+  background: #f7f9fc;
+  border-radius: 10px;
+  white-space: normal;
+  font-size: 15px;
+}
+
+.meta {
+  margin: 4px 0;
+  color: #555;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.error {
+  color: #b00020;
+  font-weight: 700;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 8px;
+  }
+
+  .app-header h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .button-row {
+    grid-template-columns: 1fr;
+  }
+
+  .button-row button {
+    font-size: 15px;
+  }
+
+  .status-box {
+    flex-direction: column;
+  }
+
+  .setting-box input[type="range"] {
+    width: 72%;
+  }
+}

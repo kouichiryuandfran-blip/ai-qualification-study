@@ -1,0 +1,87 @@
+{
+  "menu_name": "AI08_Transformer・LLM",
+  "display_name": "Transformer・LLM",
+  "major_category_id": "AI08",
+  "quiz_count": 13,
+  "question_count": 119,
+  "quizzes": [
+    {
+      "title": "Transformer",
+      "file_stem": "AI08-01_Transformer",
+      "question_count": 11,
+      "relative_path": "AI08_Transformer・LLM/AI08-01_Transformer.json"
+    },
+    {
+      "title": "Self-Attention",
+      "file_stem": "AI08-02_Self-Attention",
+      "question_count": 10,
+      "relative_path": "AI08_Transformer・LLM/AI08-02_Self-Attention.json"
+    },
+    {
+      "title": "位置情報",
+      "file_stem": "AI08-03_位置情報",
+      "question_count": 7,
+      "relative_path": "AI08_Transformer・LLM/AI08-03_位置情報.json"
+    },
+    {
+      "title": "言語モデル",
+      "file_stem": "AI08-04_言語モデル",
+      "question_count": 8,
+      "relative_path": "AI08_Transformer・LLM/AI08-04_言語モデル.json"
+    },
+    {
+      "title": "大規模言語モデル",
+      "file_stem": "AI08-05_大規模言語モデル",
+      "question_count": 12,
+      "relative_path": "AI08_Transformer・LLM/AI08-05_大規模言語モデル.json"
+    },
+    {
+      "title": "Token",
+      "file_stem": "AI08-06_Token",
+      "question_count": 10,
+      "relative_path": "AI08_Transformer・LLM/AI08-06_Token.json"
+    },
+    {
+      "title": "事前学習",
+      "file_stem": "AI08-07_事前学習",
+      "question_count": 9,
+      "relative_path": "AI08_Transformer・LLM/AI08-07_事前学習.json"
+    },
+    {
+      "title": "Fine-tuning",
+      "file_stem": "AI08-08_Fine-tuning",
+      "question_count": 9,
+      "relative_path": "AI08_Transformer・LLM/AI08-08_Fine-tuning.json"
+    },
+    {
+      "title": "RLHF",
+      "file_stem": "AI08-09_RLHF",
+      "question_count": 8,
+      "relative_path": "AI08_Transformer・LLM/AI08-09_RLHF.json"
+    },
+    {
+      "title": "Alignment",
+      "file_stem": "AI08-10_Alignment",
+      "question_count": 8,
+      "relative_path": "AI08_Transformer・LLM/AI08-10_Alignment.json"
+    },
+    {
+      "title": "推論パラメータ",
+      "file_stem": "AI08-11_推論パラメータ",
+      "question_count": 9,
+      "relative_path": "AI08_Transformer・LLM/AI08-11_推論パラメータ.json"
+    },
+    {
+      "title": "Hallucination",
+      "file_stem": "AI08-12_Hallucination",
+      "question_count": 10,
+      "relative_path": "AI08_Transformer・LLM/AI08-12_Hallucination.json"
+    },
+    {
+      "title": "Context",
+      "file_stem": "AI08-13_Context",
+      "question_count": 8,
+      "relative_path": "AI08_Transformer・LLM/AI08-13_Context.json"
+    }
+  ]
+}

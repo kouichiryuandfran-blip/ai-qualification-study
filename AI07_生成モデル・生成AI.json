@@ -1,0 +1,57 @@
+{
+  "menu_name": "AI07_生成モデル・生成AI",
+  "display_name": "生成モデル・生成AI",
+  "major_category_id": "AI07",
+  "quiz_count": 8,
+  "question_count": 73,
+  "quizzes": [
+    {
+      "title": "生成AIとは",
+      "file_stem": "AI07-01_生成AIとは",
+      "question_count": 11,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-01_生成AIとは.json"
+    },
+    {
+      "title": "RNN",
+      "file_stem": "AI07-02_RNN",
+      "question_count": 8,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-02_RNN.json"
+    },
+    {
+      "title": "LSTM",
+      "file_stem": "AI07-03_LSTM",
+      "question_count": 8,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-03_LSTM.json"
+    },
+    {
+      "title": "VAE",
+      "file_stem": "AI07-04_VAE",
+      "question_count": 8,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-04_VAE.json"
+    },
+    {
+      "title": "GAN",
+      "file_stem": "AI07-05_GAN",
+      "question_count": 11,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-05_GAN.json"
+    },
+    {
+      "title": "自己回帰モデル",
+      "file_stem": "AI07-06_自己回帰モデル",
+      "question_count": 8,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-06_自己回帰モデル.json"
+    },
+    {
+      "title": "拡散モデル",
+      "file_stem": "AI07-07_拡散モデル",
+      "question_count": 11,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-07_拡散モデル.json"
+    },
+    {
+      "title": "生成AIの種類",
+      "file_stem": "AI07-08_生成AIの種類",
+      "question_count": 8,
+      "relative_path": "AI07_生成モデル・生成AI/AI07-08_生成AIの種類.json"
+    }
+  ]
+}

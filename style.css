@@ -1,0 +1,202 @@
+body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 12px;
+  color: #333;
+}
+
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.group-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #7CB342;
+  word-break: break-all;
+}
+
+.menu-card,
+.card,
+.answer,
+.error-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card {
+  padding: 18px;
+}
+
+.menu-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card {
+  padding: 20px;
+  margin: 12px 0;
+}
+
+.question-card {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: bold;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.answer {
+  padding: 16px;
+  margin-top: 12px;
+  background: #fff6d8;
+  border: 1px solid #f0d98b;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.6;
+}
+
+.card-btn,
+.main-btn,
+.next,
+.ok,
+.ng,
+.small-btn {
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-btn,
+.main-btn,
+.next {
+  width: 100%;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.card-btn {
+  background: #7CB342;
+  color: #fff;
+}
+
+.main-btn {
+  background: #333;
+  color: #fff;
+}
+
+.next {
+  background: #111;
+  color: #fff;
+}
+
+.small-btn {
+  background: #F1F8E9;
+  color: #7CB342;
+  padding: 10px 14px;
+}
+
+.judge-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ok,
+.ng {
+  width: 50%;
+  padding: 15px;
+  color: #fff;
+}
+
+.ok {
+  background: #43a047;
+}
+
+.ng {
+  background: #e53935;
+}
+
+.counter,
+.type-label,
+.stats {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.counter {
+  color: #777;
+  font-size: 14px;
+}
+
+.type-label {
+  color: #7CB342;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.stats {
+  margin-top: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.error-card {
+  padding: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .question-card {
+    font-size: 18px;
+  }
+
+  .card-btn,
+  .main-btn,
+  .next,
+  .ok,
+  .ng {
+    font-size: 15px;
+  }
+}

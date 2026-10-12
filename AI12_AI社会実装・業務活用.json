@@ -1,0 +1,81 @@
+{
+  "menu_name": "AI12_AI社会実装・業務活用",
+  "display_name": "AI社会実装・業務活用",
+  "major_category_id": "AI12",
+  "quiz_count": 12,
+  "question_count": 197,
+  "quizzes": [
+    {
+      "title": "AIプロジェクト",
+      "file_stem": "AI12-01_AIプロジェクト",
+      "question_count": 16,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-01_AIプロジェクト.json"
+    },
+    {
+      "title": "課題設定",
+      "file_stem": "AI12-02_課題設定",
+      "question_count": 16,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-02_課題設定.json"
+    },
+    {
+      "title": "データ収集",
+      "file_stem": "AI12-03_データ収集",
+      "question_count": 16,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-03_データ収集.json"
+    },
+    {
+      "title": "データ加工",
+      "file_stem": "AI12-04_データ加工",
+      "question_count": 15,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-04_データ加工.json"
+    },
+    {
+      "title": "学習・評価",
+      "file_stem": "AI12-05_学習・評価",
+      "question_count": 16,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-05_学習・評価.json"
+    },
+    {
+      "title": "AI導入・運用",
+      "file_stem": "AI12-06_AI導入・運用",
+      "question_count": 18,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-06_AI導入・運用.json"
+    },
+    {
+      "title": "生成AI業務利用",
+      "file_stem": "AI12-07_生成AI業務利用",
+      "question_count": 20,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-07_生成AI業務利用.json"
+    },
+    {
+      "title": "文書作成",
+      "file_stem": "AI12-08_文書作成",
+      "question_count": 16,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-08_文書作成.json"
+    },
+    {
+      "title": "情報整理・要約",
+      "file_stem": "AI12-09_情報整理・要約",
+      "question_count": 15,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-09_情報整理・要約.json"
+    },
+    {
+      "title": "アイデア創出",
+      "file_stem": "AI12-10_アイデア創出",
+      "question_count": 14,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-10_アイデア創出.json"
+    },
+    {
+      "title": "業務効率化",
+      "file_stem": "AI12-11_業務効率化",
+      "question_count": 17,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-11_業務効率化.json"
+    },
+    {
+      "title": "AI導入時の注意事項",
+      "file_stem": "AI12-12_AI導入時の注意事項",
+      "question_count": 18,
+      "relative_path": "AI12_AI社会実装・業務活用/AI12-12_AI導入時の注意事項.json"
+    }
+  ]
+}

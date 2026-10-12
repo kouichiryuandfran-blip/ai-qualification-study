@@ -1,0 +1,63 @@
+{
+  "menu_name": "AI05_ディープラーニング要素技術",
+  "display_name": "ディープラーニング要素技術",
+  "major_category_id": "AI05",
+  "quiz_count": 9,
+  "question_count": 33,
+  "quizzes": [
+    {
+      "title": "全結合層",
+      "file_stem": "AI05-01_全結合層",
+      "question_count": 3,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-01_全結合層.json"
+    },
+    {
+      "title": "畳み込み層",
+      "file_stem": "AI05-02_畳み込み層",
+      "question_count": 4,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-02_畳み込み層.json"
+    },
+    {
+      "title": "正規化層",
+      "file_stem": "AI05-03_正規化層",
+      "question_count": 3,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-03_正規化層.json"
+    },
+    {
+      "title": "プーリング層",
+      "file_stem": "AI05-04_プーリング層",
+      "question_count": 3,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-04_プーリング層.json"
+    },
+    {
+      "title": "スキップ結合",
+      "file_stem": "AI05-05_スキップ結合",
+      "question_count": 3,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-05_スキップ結合.json"
+    },
+    {
+      "title": "回帰結合層",
+      "file_stem": "AI05-06_回帰結合層",
+      "question_count": 5,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-06_回帰結合層.json"
+    },
+    {
+      "title": "Attention",
+      "file_stem": "AI05-07_Attention",
+      "question_count": 5,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-07_Attention.json"
+    },
+    {
+      "title": "オートエンコーダ",
+      "file_stem": "AI05-08_オートエンコーダ",
+      "question_count": 4,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-08_オートエンコーダ.json"
+    },
+    {
+      "title": "データ拡張",
+      "file_stem": "AI05-09_データ拡張",
+      "question_count": 3,
+      "relative_path": "AI05_ディープラーニング要素技術/AI05-09_データ拡張.json"
+    }
+  ]
+}

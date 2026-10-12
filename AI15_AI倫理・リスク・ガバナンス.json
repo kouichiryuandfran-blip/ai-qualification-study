@@ -1,0 +1,105 @@
+{
+  "menu_name": "AI15_AI倫理・リスク・ガバナンス",
+  "display_name": "AI倫理・リスク・ガバナンス",
+  "major_category_id": "AI15",
+  "quiz_count": 16,
+  "question_count": 70,
+  "quizzes": [
+    {
+      "title": "AI倫理",
+      "file_stem": "AI15-01_AI倫理",
+      "question_count": 5,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-01_AI倫理.json"
+    },
+    {
+      "title": "人間中心",
+      "file_stem": "AI15-02_人間中心",
+      "question_count": 4,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-02_人間中心.json"
+    },
+    {
+      "title": "公平性",
+      "file_stem": "AI15-03_公平性",
+      "question_count": 4,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-03_公平性.json"
+    },
+    {
+      "title": "バイアス",
+      "file_stem": "AI15-04_バイアス",
+      "question_count": 4,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-04_バイアス.json"
+    },
+    {
+      "title": "透明性",
+      "file_stem": "AI15-05_透明性",
+      "question_count": 5,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-05_透明性.json"
+    },
+    {
+      "title": "説明責任",
+      "file_stem": "AI15-06_説明責任",
+      "question_count": 4,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-06_説明責任.json"
+    },
+    {
+      "title": "安全性",
+      "file_stem": "AI15-07_安全性",
+      "question_count": 4,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-07_安全性.json"
+    },
+    {
+      "title": "セキュリティ",
+      "file_stem": "AI15-08_セキュリティ",
+      "question_count": 8,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-08_セキュリティ.json"
+    },
+    {
+      "title": "AIの悪用",
+      "file_stem": "AI15-09_AIの悪用",
+      "question_count": 4,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-09_AIの悪用.json"
+    },
+    {
+      "title": "ディープフェイク・偽情報",
+      "file_stem": "AI15-10_ディープフェイク・偽情報",
+      "question_count": 5,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-10_ディープフェイク・偽情報.json"
+    },
+    {
+      "title": "民主主義への影響",
+      "file_stem": "AI15-11_民主主義への影響",
+      "question_count": 2,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-11_民主主義への影響.json"
+    },
+    {
+      "title": "環境問題",
+      "file_stem": "AI15-12_環境問題",
+      "question_count": 2,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-12_環境問題.json"
+    },
+    {
+      "title": "労働・雇用",
+      "file_stem": "AI15-13_労働・雇用",
+      "question_count": 2,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-13_労働・雇用.json"
+    },
+    {
+      "title": "国内外ガイドライン",
+      "file_stem": "AI15-14_国内外ガイドライン",
+      "question_count": 7,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-14_国内外ガイドライン.json"
+    },
+    {
+      "title": "AIガバナンス",
+      "file_stem": "AI15-15_AIガバナンス",
+      "question_count": 8,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-15_AIガバナンス.json"
+    },
+    {
+      "title": "AI関連制度・政策",
+      "file_stem": "AI15-16_AI関連制度・政策",
+      "question_count": 2,
+      "relative_path": "AI15_AI倫理・リスク・ガバナンス/AI15-16_AI関連制度・政策.json"
+    }
+  ]
+}
