@@ -34,6 +34,17 @@
 
   </div>
 
+  <div class="all-random-box">
+    <h2>🎲 全テーマ ランダム出題</h2>
+    <p class="subtext">AI01～AI15の全テーマからランダムに出題します</p>
+    <div class="random-count-grid">
+      <button onclick="startAllRandom(10)">10問</button>
+      <button onclick="startAllRandom(20)">20問</button>
+      <button onclick="startAllRandom(30)">30問</button>
+      <button onclick="startAllRandom(50)">50問</button>
+    </div>
+  </div>
+
   <hr style="margin: 20px 0;">
 
   <p class="subtext">
@@ -45,6 +56,10 @@
 </div>
 
 <script>
+  function startAllRandom(count) {
+    location.href = "app.html?mode=allrandom&count=" + encodeURIComponent(count);
+  }
+
   const list = document.getElementById("groupList");
 
   fetch("./all_menus.json")

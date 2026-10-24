@@ -6,7 +6,8 @@ let correct = 0;
 let total = 0;
 let currentGroup = "";
 let currentQuizTitle = "";
-let currentMode = "normal"; // normal / weak
+let currentMode = "normal"; // normal / weak / allrandom
+let currentQuestionSource = null;
 
 const WEAK_KEY = "ai_qualification_quiz_weak_questions_v1";
 const REPORT_EMAIL = "kouichi.ryuandfran@gmail.com";
@@ -16,8 +17,13 @@ const USER_NAME_KEY = "ai_qualification_quiz_user_name_v1";
 
 const params = new URLSearchParams(location.search);
 const group = params.get("group");
+const modeParam = params.get("mode");
+const countParam = Math.max(1, Math.min(100, Number(params.get("count")) || 10));
 
-if (!group) {
+if (modeParam === "allrandom") {
+  currentMode = "allrandom";
+  startAllThemeRandom(countParam);
+} else if (!group) {
   document.body.innerHTML = `
     <div class="container">
       <div class="error-card">
@@ -29,39 +35,85 @@ if (!group) {
   throw new Error("group parameter is missing.");
 }
 
-currentGroup = group;
+if (modeParam !== "allrandom") {
+  currentGroup = group;
 
-const groupTitleEl = document.getElementById("groupTitle");
-if (groupTitleEl) {
-  groupTitleEl.textContent = currentGroup;
+  const groupTitleEl = document.getElementById("groupTitle");
+  if (groupTitleEl) groupTitleEl.textContent = currentGroup;
+
+  const groupJsonPath = `./${group}.json`;
+  fetch(groupJsonPath)
+    .then(res => {
+      if (!res.ok) throw new Error(`JSON読込失敗: ${res.status} ${res.statusText}`);
+      return res.json();
+    })
+    .then(data => { menuData = data; initMenu(); })
+    .catch(err => showFatalError(err, groupJsonPath));
 }
 
-const groupJsonPath = `./${group}.json`;
+async function startAllThemeRandom(count) {
+  try {
+    setText("groupTitle", "全テーマ ランダム出題");
+    const menuEl = document.getElementById("menu");
+    menuEl.innerHTML = `<h2 class="menu-title">全テーマ ランダム出題</h2><p class="subtext">AI01～AI15の全テーマから問題を準備しています...</p>`;
 
-fetch(groupJsonPath)
-  .then(res => {
-    if (!res.ok) {
-      throw new Error(`JSON読込失敗: ${res.status} ${res.statusText}`);
+    const allMenuRes = await fetch("./all_menus.json");
+    if (!allMenuRes.ok) throw new Error(`all_menus.json 読込失敗: ${allMenuRes.status}`);
+    const allMenuData = await allMenuRes.json();
+    const menus = Array.isArray(allMenuData.menus) ? allMenuData.menus : [];
+    if (!menus.length) throw new Error("分類メニューが見つかりません。");
+
+    const pool = [];
+    for (const menu of menus) {
+      const groupFile = menu.output_file || `${menu.menu_name}.json`;
+      const groupRes = await fetch(`./${groupFile}`);
+      if (!groupRes.ok) throw new Error(`${groupFile} 読込失敗: ${groupRes.status}`);
+      const groupData = await groupRes.json();
+      const quizzes = Array.isArray(groupData.quizzes) ? groupData.quizzes : [];
+
+      for (const quiz of quizzes) {
+        if (!quiz.relative_path) continue;
+        const quizRes = await fetch(`./${quiz.relative_path}`);
+        if (!quizRes.ok) throw new Error(`${quiz.relative_path} 読込失敗: ${quizRes.status}`);
+        const quizData = await quizRes.json();
+        const list = normalizeQuestions(quizData);
+        list.forEach(q => pool.push({
+          ...q,
+          __sourceGroup: groupData.menu_name || menu.menu_name || "",
+          __sourceQuizTitle: quiz.title || quiz.file_stem || "",
+          __sourceQuizPath: quiz.relative_path
+        }));
+      }
     }
-    return res.json();
-  })
-  .then(data => {
-    menuData = data;
-    initMenu();
-  })
-  .catch(err => {
+
+    if (!pool.length) throw new Error("ランダム出題に使用できる問題がありません。");
+    shuffleArray(pool);
+    questions = pool.slice(0, Math.min(count, pool.length));
+    allQuestions = pool;
+    currentGroup = "全テーマ";
+    currentQuizTitle = `全テーマ ランダム ${questions.length}問`;
+    menuData = { menu_name: "全テーマ" };
+    index = 0; correct = 0; total = 0;
+
+    menuEl.classList.add("hidden");
+    document.getElementById("quiz").classList.remove("hidden");
+    restoreUserName();
+    setText("groupTitle", `全テーマ / ランダム出題 (${questions.length}問)`);
+    setText("stats", "今回の成績: 0% (0/0)");
+    loadQuestion();
+  } catch (err) {
     console.error(err);
-    document.body.innerHTML = `
-      <div class="container">
-        <div class="error-card">
-          <h2>読込エラー</h2>
-          <p>${escapeHtml(err.message)}</p>
-          <p>読込先: ${escapeHtml(groupJsonPath)}</p>
-          <p><a href="index.html">戻る</a></p>
-        </div>
-      </div>
-    `;
-  });
+    showFatalError(err, "全テーマ ランダム出題");
+  }
+}
+
+function showFatalError(err, target) {
+  document.body.innerHTML = `
+    <div class="container"><div class="error-card">
+      <h2>読込エラー</h2><p>${escapeHtml(err.message)}</p>
+      <p>読込先: ${escapeHtml(target)}</p><p><a href="index.html">戻る</a></p>
+    </div></div>`;
+}
 
 function initMenu() {
   const menu = document.getElementById("menu");
@@ -138,9 +190,9 @@ function loadQuizFile(quiz, mode = "normal") {
           alert("このテーマには保存された苦手問題がありません。");
           return;
         }
+        shuffleArray(questions);
       } else {
         questions = [...allQuestions];
-        shuffleArray(questions);
       }
 
       index = 0;
@@ -181,6 +233,11 @@ function normalizeQuestions(data) {
 
 function loadQuestion() {
   const q = questions[index];
+  currentQuestionSource = q ? {
+    group: q.__sourceGroup || menuData.menu_name || currentGroup,
+    quizTitle: q.__sourceQuizTitle || currentQuizTitle,
+    quizPath: q.__sourceQuizPath || getCurrentQuizPath()
+  } : null;
   if (!q) {
     throw new Error("問題データが見つかりません。");
   }
@@ -202,6 +259,9 @@ function loadQuestion() {
   }
 
   setText("counter", `${index + 1} / ${questions.length}`);
+  if (currentMode === "allrandom" && currentQuestionSource) {
+    label = `${label}\n${currentQuestionSource.group} / ${currentQuestionSource.quizTitle}`;
+  }
   setText("type", label);
   setText("questionId", displayId ? `問題番号: ${displayId}` : "");
   setText("questionFormat", questionFormat ? `問題形式: ${questionFormat}` : "");
@@ -210,6 +270,7 @@ function loadQuestion() {
   const answerText = getQuestionField(q, ["answer", "解答", "正解"]);
   const explanationText = getQuestionField(q, ["explanation", "explanation1", "解説", "解説1"]);
   const explanation2Text = getQuestionField(q, ["explanation2", "explanation_2", "解説2"]);
+  const explanationImagePath = getExplanationImagePath(q);
 
   const answerHtml =
     `<b>解答</b><br>${escapeHtml(answerText).replace(/\n/g, "<br>")}` +
@@ -220,8 +281,13 @@ function loadQuestion() {
 
   setHTML("answer", answerHtml);
   setHTML("explanation2", explanation2Html);
+  setHTML("explanationImage", explanationImagePath
+    ? `<img src="${escapeHtml(explanationImagePath)}" alt="解説画像" class="explanation-image" loading="lazy">`
+    : "");
 
   document.getElementById("answer").classList.add("hidden");
+  document.getElementById("explanationImage").classList.add("hidden");
+  document.getElementById("showExplanationImageBtn").classList.add("hidden");
   document.getElementById("explanation2").classList.add("hidden");
   document.getElementById("showExplanation2Btn").classList.add("hidden");
   document.getElementById("judge").classList.add("hidden");
@@ -233,14 +299,34 @@ function loadQuestion() {
 function showAnswer() {
   const q = questions[index];
   const explanation2Text = q ? getQuestionField(q, ["explanation2", "explanation_2", "解説2"]) : "";
+  const explanationImagePath = q ? getExplanationImagePath(q) : "";
 
   document.getElementById("answer").classList.remove("hidden");
   document.getElementById("judge").classList.remove("hidden");
   document.getElementById("showAnswerBtn").classList.add("hidden");
 
+  if (explanationImagePath) {
+    document.getElementById("showExplanationImageBtn").classList.remove("hidden");
+  }
+
   if (explanation2Text) {
     document.getElementById("showExplanation2Btn").classList.remove("hidden");
   }
+}
+
+function showExplanationImage() {
+  document.getElementById("explanationImage").classList.remove("hidden");
+  document.getElementById("showExplanationImageBtn").classList.add("hidden");
+}
+
+function getExplanationImagePath(question) {
+  const raw = getQuestionField(question, [
+    "explanation_image", "explanationImage", "image", "image_path",
+    "解説画像", "解説画像パス", "画像", "画像パス"
+  ]);
+  if (!raw) return "";
+  if (/^(https?:|data:|blob:)/i.test(raw)) return raw;
+  return raw.startsWith("./") || raw.startsWith("../") || raw.startsWith("/") ? raw : `./${raw}`;
 }
 
 function showExplanation2() {
@@ -254,9 +340,9 @@ function mark(ok) {
   total++;
   if (ok) {
     correct++;
-    removeWeakQuestion(q, getCurrentQuizPath());
+    removeWeakQuestion(q, currentQuestionSource?.quizPath || getCurrentQuizPath());
   } else {
-    saveWeakQuestion(q, getCurrentQuizPath());
+    saveWeakQuestion(q, currentQuestionSource?.quizPath || getCurrentQuizPath());
   }
 
   const rate = Math.round((correct / total) * 100);
@@ -269,8 +355,8 @@ function mark(ok) {
 
   sendLearningLog({
     userName: getUserName(),
-    groupName: menuData.menu_name || currentGroup,
-    quizTitle: currentQuizTitle,
+    groupName: currentQuestionSource?.group || menuData.menu_name || currentGroup,
+    quizTitle: currentQuestionSource?.quizTitle || currentQuizTitle,
     questionId: questionId,
     questionType: questionType,
     category: category,
@@ -292,14 +378,15 @@ function nextQuestion() {
     const rate = total > 0 ? Math.round((correct / total) * 100) : 0;
     alert(`全問終了しました\n正解率: ${rate}% (${correct}/${total})`);
 
-    document.getElementById("quiz").classList.add("hidden");
-    document.getElementById("menu").classList.remove("hidden");
-
-    const titleEl = document.getElementById("groupTitle");
-    if (titleEl) {
-      titleEl.textContent = menuData.menu_name || currentGroup;
+    if (currentMode === "allrandom") {
+      location.href = "index.html";
+      return;
     }
 
+    document.getElementById("quiz").classList.add("hidden");
+    document.getElementById("menu").classList.remove("hidden");
+    const titleEl = document.getElementById("groupTitle");
+    if (titleEl) titleEl.textContent = menuData.menu_name || currentGroup;
     initMenu();
     return;
   }
@@ -317,8 +404,8 @@ function reportIssue() {
   const body = [
     "下記問題について確認をお願いします。",
     "",
-    `分類: ${menuData.menu_name || currentGroup}`,
-    `テーマ: ${currentQuizTitle}`,
+    `分類: ${currentQuestionSource?.group || menuData.menu_name || currentGroup}`,
+    `テーマ: ${currentQuestionSource?.quizTitle || currentQuizTitle}`,
     `問題番号: ${displayId || ""}`,
     `カテゴリー: ${getQuestionField(q, ["category", "表示カテゴリー", "カテゴリー"])}`,
     `グレード: ${getQuestionField(q, ["grade", "グレード"])}`,

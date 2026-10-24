@@ -200,3 +200,55 @@ h1 {
     font-size: 15px;
   }
 }
+
+/* 2026-10-24 改善：ランダム出題・解説画像 */
+.random-btn {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+.image-btn {
+  background: #0277BD;
+}
+.explanation-image-box {
+  background: #fff;
+  border: 1px solid #b3e5fc;
+  text-align: center;
+}
+.explanation-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* 2026-10-24 全テーマ横断ランダム出題 */
+.all-random-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 16px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.all-random-box h2 {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+.random-count-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.random-count-grid button {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 10px;
+  background: #2E7D32;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.random-count-grid button:active { transform: scale(0.98); }
+.type-label { white-space: pre-line; }
